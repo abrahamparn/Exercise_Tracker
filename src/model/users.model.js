@@ -77,7 +77,6 @@ async function showUserLogs(id, from, to, limit) {
       logConditions["log.date"] = logConditions["log.date"] || {};
       logConditions["log.date"].$lte = new Date(to).toDateString();
       userLogs.to = new Date(to).toDateString();
-      console.log(userLogs.to);
     }
 
     // Filter the logs based on the 'from' and 'to' conditions
